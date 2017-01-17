@@ -21,7 +21,14 @@ body {
   /*width: 10%;*/
 }
 .hero {
-  background-color: #e1f5fe;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6bdeff+0,d1f5ff+100 */
+  background: #6bdeff; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #6bdeff 0%, #d1f5ff 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  #6bdeff 0%,#d1f5ff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  #6bdeff 0%,#d1f5ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bdeff', endColorstr='#d1f5ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  /*background-color: #e1f5fe;*/
   /*height: 700px;*/
   padding: 100px 0 50px 0;
 }
@@ -37,6 +44,11 @@ body {
 .pad-left{
   padding-left: 20px;
 }
+.pad-left-reveal{
+  padding-left: 70px;
+  margin-top: -40px;
+}
+
 .pad-all{
   padding: 30px;
 }

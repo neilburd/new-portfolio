@@ -17,7 +17,7 @@ $(document).ready(function(){
     // Make Reveal animate up and display none when mouseleave
     $(document).on('mouseenter.hover-reveal','.hover-reveal', function (e){
           $(e.target).closest('.card').css('overflow', 'hidden');
-          $(this).find('.card-content>span').attr('style', 'color: rgba(0,0,0,0) !important');
+          $(this).find('.card-content>*').attr('style', 'visibility: hidden !important');
           $(this).find('.card-reveal').css({ display: 'block'})
             .velocity("stop", true)
             .velocity({translateY: '-100%'},
@@ -36,6 +36,6 @@ $(document).ready(function(){
           complete: function() { $(this).css({ display: 'none'}); }
         }
       );
-      $(this).find('.card-content>span').attr('style', '');
+      $(this).find('.card-content>*').attr('style', '');
     });
 });
