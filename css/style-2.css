@@ -1,18 +1,24 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
-.logo {
+/*.logo {
   height: 35px;
   padding-right: 10px;
   margin-bottom: -6px;
+}*/
+.hero {
+  /*background-color: blue;*/
+  padding: 20px 0 50px 0;
 }
-.bg-red{
-background-color: red;
+.hero-text{
+  margin-top: calc(20%);
+
 }
-.hero-image{
-  margin-bottom: 50px;
-  margin-top: 50px;
+.height-short{
+  height: 250px;;
 }
+.height-200{
+  height: 240px;
 }
 .profile-pic{
   width: 900px;
@@ -41,18 +47,11 @@ background-color: red;
   height:50px;
   /*width: 10%;*/
 }
-.hero {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6bdeff+0,d1f5ff+100 */
-  background: #6bdeff; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #6bdeff 0%, #d1f5ff 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover,  #6bdeff 0%,#d1f5ff 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center,  #6bdeff 0%,#d1f5ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bdeff', endColorstr='#d1f5ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-  /*background-color: #e1f5fe;*/
-  /*height: 700px;*/
-  padding: 100px 0 50px 0;
+.extra-small-icons{
+  height:20px;
+  /*width: 10%;*/
 }
+
 .about {
   background-color: #e1f5fe;
   /*height: 700px;*/

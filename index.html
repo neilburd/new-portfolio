@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="theme-color" content="#2196F3">
     <title>Neil Burdick Portfolio</title>
 
     <!-- CSS  -->
@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="css/style-2.css">
 
 </head>
-<body id="top" class="">
-<!--Navigation-->
+<body id="top">
+
+
+
+<!--***************  Navigation  -->
  <div class="navbar-fixed">
     <nav class="blue lighten-4">
         <div class="container">
@@ -24,29 +27,30 @@
             </a>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="blue-grey-text text-darken-4" href="#work">Work</a></li>
-                    <li><a class="blue-grey-text text-darken-4" href="#about">About</a></li>
-                    <li><a class="blue-grey-text text-darken-4" href="#contact">Contact</a></li>
+                    <li><a class="blue-grey-text text-darken-4" href="#work">WORK</a></li>
+                    <li><a class="blue-grey-text text-darken-4" href="#about">ABOUT</a></li>
+                    <li><a class="blue-grey-text text-darken-4" href="#contact">CONTACT</a></li>
                 </ul>
                 <ul class="side-nav" id="nav-mobile">
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#team">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#team">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
 
-<!--Hero-->
-<div class="" id="index-banner">
+<!--************  Hero  ************-->
+<!--******************************** -->
+<div class="hero" id="index-banner">
     <div class="container">
         <div class="row hero-image">
-         <img class="col s12 m12 l12 profile-pic margin-top" src="./img/NB-PROFILE-PIC-3.jpg" alt="profile pic">
+         <img class="col s12 m4 l4 profile-pic margin-top" src="./img/NB-Profile-Pic-4.png" alt="profile pic">
 
-          <h3 class="over-image col s12 m12 l12">
-              <span class="bold-text margin-left white-text">I'm</span>
-              <span class="typed-text bold-text white-text"></span>
+          <h3 class="hero-text col s12 m8 l8">
+              <span class="bold-text">I'm</span>
+              <span class="bold-text typed-text"></span>
           </h3>
         </div>
         <div class="row center pad-bottom margin-top">
@@ -69,15 +73,56 @@
     </div>
 </div>
 
-<!-- <div class="parallax-container">
-  <div class="parallax"><img src="./img/parallax1.png"></div>
-</div> -->
-
-<!--Work-->
-<div class="section marg-top-nav" id="work">
+<!--*********  Work  ***************-->
+<!-- *******************************-->
+<div class="section blue lighten-4" id="work">
     <div class="container">
-      <h2 class="bold-text light-blue-text text-darken-3 marg-top-nav" id="headline">Work </h2>
+      <h2 class="bold-text light-blue-text text-darken-3 marg-top-nav" id="headline">Work - Development </h2>
         <div class="row" >
+
+          <!-- #### Snipp Share ### -->
+          <div class="col s12 m12 l12 ">
+              <div class="card hover-reveal ">
+                  <div class="card-image height-short waves-effect waves-block waves-light">
+                      <img class="activator" src="./img/snipp-share.png">
+
+                  </div>
+                  <div class="card-content valign-wrapper">
+                      <img class="small-icons valign" src="./img/development.svg">
+                      <span class="pad-left card-title activator grey-text text-darken-4">Snipp Share</span>
+
+                  </div>
+                  <div class="card-reveal">
+                      <img class="small-icons valign" src="./img/development.svg">
+                      <span class="pad-left-reveal card-title grey-text text-darken-4">Snipp Share</span>
+                      <p>This web-app was created to store and share code snippets. The front-end of this web-app was created using React. The front-end communicates with the back-end API which was built with Ruby on Rails and a postgres database. .</p>
+                      <p class="bold-text"><a href="http://snipp-share-front-end.surge.sh/snippets">View Project</a></p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- #### Snipp Share ### -->
+          <div class="col s12 m6 l6">
+              <div class="card hover-reveal">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/job-tymr-neil.png">
+
+                  </div>
+                  <div class="card-content valign-wrapper">
+                      <img class="small-icons valign" src="./img/development.svg">
+                      <span class="pad-left card-title activator grey-text text-darken-4">Job Tymr</span>
+
+                  </div>
+                  <div class="card-reveal">
+                      <img class="small-icons valign" src="./img/development.svg">
+                      <span class="pad-left-reveal card-title grey-text text-darken-4">Job Tymr</span>
+                      <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                      <p class="bold-text"><a href="https://neilburd.github.io/snipp-share-front-end/">View Project</a></p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- #### SIMON CLONE #### -->
             <div class="col s12 m6 l6 ">
                 <div class="card hover-reveal activator">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -97,10 +142,12 @@ classic memory game.</p>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6 l6">
+
+            <!-- #### JobTYMER ### -->
+            <div class="col s12 m12 l12">
                 <div class="card hover-reveal">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/job-tymr-neil.png">
+                    <div class="card-image height-short waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/art-pear-image.png">
 
                     </div>
                     <div class="card-content valign-wrapper">
@@ -110,82 +157,142 @@ classic memory game.</p>
                     </div>
                     <div class="card-reveal">
                         <img class="small-icons valign" src="./img/development.svg">
-                        <span class="pad-left-reveal card-title grey-text text-darken-4">Job Tymr</span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                        <p class="bold-text"><a href="https://timekeypr.herokuapp.com/">View Project</a></p>
+                        <span class="pad-left-reveal card-title grey-text text-darken-4">Art Pear</span>
+                        <p>As part of of a team we created a web-app to connect artist with those are seeking an artist for work. It was created using Angular for the front end, mongo db with express and node for the backend. </p>
+                        <p class="bold-text"><a href="https://artpear-959b9.firebaseapp.com/#/register">View Project</a></p>
                     </div>
                 </div>
             </div>
+
+
+            <div class="col s12 m12 l12">
+              <h2 class="bold-text light-blue-text text-darken-3 marg-top-nav" id="headline">Work - Graphic Design </h2>
+            </div>
+
+
+            <!-- ##### TRA RID #### -->
             <div class="col s12 m4 l4">
-                <div class="card">
+                <div class="card hover-reveal">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project3.png">
+                        <img class="activator" src="./img/Minicon_logo_Weaponizer.jpg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
+                        <img class="extra-small-icons valign" src="./img/design.svg">
+                        <span class="card-title activator grey-text text-darken-4">Transformers RID<i class="mdi-navigation-more-vert right"></i></span>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                        <img class="small-icons valign" src="./img/design.svg">
+                        <span class="card-title grey-text text-darken-4">Transformers RID <i class="mdi-navigation-close right"></i></span>
+                        <p>While working as a member of the Transformers brand team I was tasked with updating the Transformers RID look and feel for the newest season. </p>
+                        <p><a href="https://www.behance.net/gallery/49688857/Transformers-RID">View Project</a></p>
+
                     </div>
                 </div>
             </div>
+
+            <!-- #### TRA ALT-MODES ####-->
             <div class="col s12 m4 l4">
-                <div class="card">
+                <div class="card hover-reveal">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project4.jpg">
+                        <img class="activator" src="img/r_ALT-MODES-Blind-Box.jpg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
+                        <img class="extra-small-icons valign" src="./img/design.svg">
+                        <span class="card-title activator grey-text text-darken-4">Alt-Modes <i class="mdi-navigation-more-vert right"></i></span>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                        <img class="small-icons valign" src="./img/design.svg">
+                        <span class="card-title grey-text text-darken-4">Alt-Modes <i class="mdi-navigation-close right"></i></span>
+                        <p>While working on the Transformers Branding team I helped in creating the brand statement that would differentiate Transformers Alt-Modes from the rest of the Transformers line.</p>
+                        <p><a href="https://www.behance.net/gallery/49688857/Transformers-RID">View Project</a></p>
+
                     </div>
                 </div>
             </div>
+
+            <!-- ### HAUSER CATALOGS ### -->
             <div class="col s12 m4 l4">
-                <div class="card">
+                <div class="card hover-reveal">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project5.png">
+                        <img class="activator" src="img/Catalog-web.jpg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
+                        <img class="extra-small-icons valign" src="./img/design.svg">
+                        <span class="card-title activator grey-text text-darken-4">Hauser Catalogs <i class="mdi-navigation-more-vert right"></i></span>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                        <img class="small-icons valign" src="./img/design.svg">
+                        <span class="card-title grey-text text-darken-4">Hauser Catalogs <i class="mdi-navigation-close right"></i></span>
+                        <p>Working with Hauser Chocolates to create and design their two newest catalogs.</p>
+                        <p><a href="https://www.behance.net/portfolio/editor?project_id=12298129">Project link</a></p>
                     </div>
                 </div>
             </div>
+
+            <!-- #### Chocolate Sauce ### -->
             <div class="col s12 l4">
-                <div class="card">
+                <div class="card hover-reveal">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project6.jpeg">
+                        <img class="activator" src="img/sauce-Bittersweet-web.jpg ">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
+                        <img class="extra-small-icons valign" src="./img/design.svg">
+                        <span class="card-title activator grey-text text-darken-4">Chocolate Sauce <i class="mdi-navigation-more-vert right"></i></span>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                        <img class="small-icons valign" src="./img/design.svg">
+                        <span class="card-title grey-text text-darken-4">Chocolate Sauce <i class="mdi-navigation-close right"></i></span>
+                        <p>This was a complete redesign of the Hauser Chocolates sauce line. The older labels did not have a gourmet feel that the client wanted for this product. I created these as a series so that they would all work together on any shelf.</p>
+                        <p><a href="https://www.behance.net/gallery/49689837/Chocolate-Sauce-Labels">Project link</a></p>
                     </div>
                 </div>
             </div>
+
+            <!-- #### LifeStyle Chocolates ### -->
+            <div class="col s12 l4">
+                <div class="card hover-reveal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/Lifestyles3-web.jpg ">
+                    </div>
+                    <div class="card-content">
+                        <img class="extra-small-icons valign" src="./img/design.svg">
+                        <span class="card-title activator grey-text text-darken-4">Lifestyle<i class="mdi-navigation-more-vert right"></i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <img class="small-icons valign" src="./img/design.svg">
+                        <span class="card-title grey-text text-darken-4">Lifestyle Chocolate<i class="mdi-navigation-close right"></i></span>
+                        <p>For this project I created the packaging for three new flavors to the Hauser Chocolates "Lifestyle Chocolates" Line.</p>
+                        <p><a href="https://www.behance.net/gallery/12297815/Lifestyle-Chocolates">Project link</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #### Annalisa Chocolates ### -->
+            <div class="col s12 l4">
+                <div class="card hover-reveal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/ANNALISA-32pc-Box-web.jpg ">
+                    </div>
+                    <div class="card-content">
+                        <img class="extra-small-icons valign" src="./img/design.svg">
+                        <span class="card-title activator grey-text text-darken-4">Annalisa<i class="mdi-navigation-more-vert right"></i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <img class="small-icons valign" src="./img/design.svg">
+                        <span class="card-title grey-text text-darken-4">Annalisa Chocolate<i class="mdi-navigation-close right"></i></span>
+                        <p>The Client wanted a super simple logotype that represented the fun and sophisticated feel of the company. I also created the chocolate legend that would go in every box. This legend needed to fold and fit into the smallest box and still draw attention to the brand.</p>
+                        <p><a href="https://www.behance.net/gallery/49690627/Annalisa-Packaging">Project link</a></p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>
 
-<!-- <div class="parallax-container">
-  <div class="parallax"><img src="./img/parallax1.png"></div>
-</div> -->
+<!--- ########### ABOUT ME ############## -->
 <div id="about"></div>
-
-<!--Team-->
 <div class="section about">
     <div class="container">
       <h2 class="bold-text light-blue-text text-darken-3"> About </h2>
@@ -195,47 +302,46 @@ classic memory game.</p>
                       <img class="col s6 m6 l4 activator circle-img pad-all" src="./img/profile-pic-neil.jpg">
 
                       <h3 class="activator grey-text text-darken-4 bold-text ">Neil Burdick</h3>
-                      <p class=" col s6 m6 l6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus beatae dolorum rerum sunt? Aperiam porro rerum voluptas, neque quaerat totam voluptatem, dolorem dolor nam distinctio, modi saepe, repellat officia libero obcaecati harum quo numquam! Esse voluptate eum veniam ducimus expedita fuga, et modi saepe totam odit, dolorum consectetur dignissimos. Perspiciatis.</p>
+                      <p class=" col s6 m6 l6">A lifelong learner and problem solver I’m always pushing myself to understand more about the world. As a web developer and professional graphic designer I am currently working through General Assemblies Web Development Immersive program to become a full stack developer. If I work on a team or individually I use the skills and knowledge I learn everyday to solve the problems presented to me, in an ethical and responsible manner. </p>
                     </div>
                 </div>
         </div>
     </div>
 </div>
 
-<!--Footer-->
-<footer id="contact" class="page-footer default_color scrollspy">
+<!-- ##########  Footer ###########  -->
+<footer id="contact" class="page-footer blue lighten-4 scrollspy">
     <div class="container">
         <div class="row">
             <div class="col s12 m6 l3 offset-by-12 left">
-                <h5 class="white-text">Social</h5>
+                <h5 class="">Social</h5>
                 <ul>
                     <li>
-                        <a class="white-text" href="https://www.behance.net/joashp">
-                            <i class="small fa fa-behance-square white-text"></i> Behance
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
-                            <i class="small fa fa-facebook-square white-text"></i> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://github.com/joashp">
+                        <a class="" href="https://github.com/neilburd">
                             <i class="small fa fa-github-square white-text"></i> Github
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" href="https://www.linkedin.com/in/joashp">
+                        <a class="" href="https://www.linkedin.com/in/neil-burdick-8a0b7a2b/">
                             <i class="small fa fa-linkedin-square white-text"></i> Linkedin
                         </a>
                     </li>
+                    <li>
+                        <a class="" href="https://www.behance.net/NeilBurdick">
+                            <i class="small fa fa-github-square white-text"></i> Behance
+                        </a>
+                    </li>
                 </ul>
+            </div>
+
+            <div class="col s12 m6 l9">
+              
             </div>
         </div>
     </div>
     <div class="footer-copyright default_color">
         <div class="container">
-            Made by <a class="white-text" href="http://joashpereira.com">Neil Burdick</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+            Made by <a class="white-text" href="http://neilburdick.com">Neil Burdick</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
         </div>
     </div>
 </footer>
