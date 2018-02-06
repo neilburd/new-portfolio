@@ -1,0 +1,175 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+}
+
+.header {
+  height: 100px;
+  background-color: green;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat (4, auto);
+  margin: 0 auto 0 auto; */
+}
+
+.image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  color: red;
+  text-align: center;
+
+}
+.no-space .box {
+  margin: 0 -15px;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms;
+    -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+.front {
+    transform: rotateY(0deg);
+    background-color: green;
+    border: 2px solid red;
+
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+
+    background-color: purple;
+    border: 2px solid red;
+
+}
+
+.grid-item:hover .front {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+}
+.grid-item:hover .back {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+}
+/* wide */
+/* @media all and (min-width: 1001px) {
+  .header {
+    background-color: blue;
+  }
+
+  .portfolio-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 0;
+  }
+  .grid-item {
+    border: 2px solid red;
+    width: 23vw;
+    height: 23vw;
+    color: red;
+    text-align: center;
+    padding-top: 25px;
+    margin: ;
+    background-color: blue;
+  }
+
+} */
+
+/* med-large */
+/* @media all and (max-width: 1000px) and (min-width: 700px)  {
+  .header {
+    background-color: red;
+  }
+
+  .portfolio-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+
+  }
+  .grid-item {
+    border: 2px solid red;
+    width: 31vw;
+    height: 30vw;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+
+    background-color: red;
+  }
+
+
+} */
+
+/* medium */
+/* @media all and (max-width: 699px) and (min-width: 520px){
+  .header {
+    background-color: yellow;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+
+  }
+  .grid-item {
+    border: 2px solid red;
+    width: 46vw;
+    height: 44vw;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    background-color: yellow;
+  }
+
+
+} */
+
+/* small */
+/* @media (max-width: 519px){
+  .header {
+    background-color: aqua;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: auto;
+
+  }
+  .grid-item {
+    border: 2px solid red;
+    width: 94vw;
+    height: 90vw;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    margin:10px;
+    background-color: aqua;
+  }
+
+} */
